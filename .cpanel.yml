@@ -1,4 +1,4 @@
 development:
   tasks:
-    - export DEPLOYPATH=/home/taevoco1/2lanygroup.taevo.co.za
+    - export DEPLOYPATH=/home/taevoco1/2lanygroup.taevo.co.za/
     - /bin/cp -R public/* $DEPLOYPATH
