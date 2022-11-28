@@ -1,0 +1,138 @@
+.Optime-Footer footer {
+  position: relative;
+  padding: 60px 0;
+}
+
+.Optime-Footer footer h2 {
+  color: #3f7ea6;
+  font-size: 1rem;
+}
+
+.Optime-Footer figure {
+  width: 100px;
+  height: 32px;
+  background-image: url("../../images/lanygroup.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.Optime-Footer footer div {
+  width: 84%;
+  margin: 0 auto 30px;
+}
+
+.Optime-Footer footer > div:first-of-type ul {
+  margin-top: 2em;
+}
+
+.Optime-Footer footer > div:first-of-type ul li {
+  display: flex;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+}
+
+.Optime-Footer footer > div:first-of-type ul li span {
+  width: auto;
+  height: auto;
+}
+
+.Optime-Footer footer > div:first-of-type ul li a {
+  color: #3f7ea6;
+}
+
+.Optime-Footer footer div:last-of-type {
+  margin-bottom: 0;
+}
+
+.Optime-Footer footer ul span:first-of-type {
+  display: flex;
+  width: 36px;
+  margin: 0;
+  height: 36px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.Optime-Footer footer ul a {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.Optime-Footer footer ul a:hover {
+  color: #d93636;
+  transition: ease-in 1s;
+}
+
+.Optime-Footer footer ul img {
+  width: auto;
+  height: 18px;
+  margin: auto;
+}
+
+.Optime-Footer footer span:last-of-type {
+  display: block;
+  width: 40px;
+  margin: 15px 0;
+  border: 2px solid #fff;
+  border-radius: 15px;
+}
+
+.Optime-Footer footer p {
+  text-transform: none;
+  line-height: 1.4;
+}
+
+.Optime-Footer footer li {
+  margin-bottom: 1em;
+}
+
+.Optime-Footer footer div:last-of-type li {
+  display: flex;
+}
+
+@media (min-width: 30em) {
+  .taevo-style {
+    margin-bottom: -140px;
+  }
+
+  .taevo-style span {
+    height: 345px;
+  }
+
+  .Optime-Footer footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .Optime-Footer footer div {
+    width: 40%;
+    margin: 0 0 60px 60px;
+  }
+}
+
+@media (min-width: 50em) {
+  .taevo-style span {
+    height: 345px;
+  }
+
+  .Optime-Footer footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .Optime-Footer footer div {
+    width: 20%;
+    margin: 0px 0 60px 60px;
+  }
+}
+
+@media (min-width: 64em) {
+  .Optime-Footer footer div {
+    width: 13%;
+    margin: 0px 0 60px 60px;
+  }
+
+  .Optime-Footer footer div:first-of-type {
+    width: 22%;
+  }
+}

@@ -1,0 +1,110 @@
+.Optime-Services {
+  padding: 3em 1.4em;
+}
+
+.Optime-Services > div:first-of-type {
+  margin-bottom: 2em;
+}
+
+.Optime-Services hgroup h4 {
+  font-size: 0.875rem;
+  margin-bottom: 0.8em;
+}
+
+.Optime-Services hgroup h2 {
+  line-height: 1.4;
+}
+
+.Optime-Services > div:first-of-type p {
+  color: var(--lany-quaternary-color);
+  margin-top: 1.8em;
+  line-height: 1.5;
+}
+.Optime-Services .cards {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  --columns: 3;
+}
+
+.Optime-Services .card {
+  --width: 3;
+  --initialBasis: calc(var(--width, 0) / var(--columns, 3) * 100%);
+  --gap: calc((var(--columns, 3) - var(--width, 0)) * 1.33%);
+  flex-basis: calc(var(--initialBasis) - var(--gap));
+  text-align: center;
+  margin-bottom: 1em;
+  padding: 3em 1em;
+  box-shadow: 0 0 99px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.Optime-Services .card h3 {
+  color: var(--lany-primary-color);
+  font-weight: 900;
+  margin: 1em 0;
+}
+
+.Optime-Services .card p {
+  color: var(--lany-quaternary-color);
+  margin-bottom: 1em;
+  line-height: 1.5;
+}
+
+.Optime-Services .card a {
+  color: var(--lany-primary-color);
+}
+
+.Optime-Services .find {
+  color: var(--lany-quaternary-color);
+  text-align: center;
+  margin-top: 1em;
+}
+
+.Optime-Services .find a {
+  font-weight: 600;
+  color: var(--lany-primary-color);
+}
+
+@media (min-width: 50em) {
+  .Optime-Services > div:first-of-type {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .Optime-Services > div:first-of-type hgroup {
+    width: 40%;
+  }
+
+  .Optime-Services > div:first-of-type p {
+    width: 50%;
+  }
+
+  .Optime-Services .cards {
+    margin: 0 auto;
+  }
+
+  .Optime-Services .card {
+    --width: 1;
+    height: 360px;
+  }
+
+  .Optime-Services .card:nth-child(2) {
+    margin: 0 1.83%;
+  }
+}
+
+@media (min-width: 64em) {
+  .Optime-Services {
+    max-width: 1180px;
+    margin: 3em auto;
+  }
+
+  .Optime-Services > div:first-of-type {
+    margin-bottom: 3em;
+  }
+
+  .Optime-Services hgroup h2 {
+    font-size: 2.4rem;
+  }
+}

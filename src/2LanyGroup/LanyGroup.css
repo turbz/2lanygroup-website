@@ -1,0 +1,41 @@
+/* #3F7EA6 */
+/* #D4D948 */
+/* #F2EDA0 */
+/* #F2F0EB */
+/* #D93636 */
+
+:root {
+  --lany-base-font-size: 1rem;
+  --lany-font-type-scale: 1.2;
+  --h5: calc(var(--lany-base-font-size) * var(--lany-font-type-scale));
+  --h4: calc(var(--h5) * var(--lany-font-type-scale));
+  --h3: calc(var(--h4) * var(--lany-font-type-scale));
+  --h2: calc(var(--h3) * var(--lany-font-type-scale));
+  --h1: calc(var(--h2) * var(--lany-font-type-scale));
+
+  /* Lany Colors */
+  --lany-primary-color: #3f7ea6;
+  --lany-secondary-color: #d4d948;
+  --lany-tertiary-color: #d93636;
+  --lany-quaternary-color: #687b8c;
+  --lany-quinary-color: #f2f0eb;
+
+  /* Heaing */
+}
+
+.Lany-Group {
+  position: relative;
+  max-width: 1920px;
+}
+
+.Lany-Group hgroup h2 {
+  color: var(--lany-primary-color);
+  font-size: var(--h2);
+}
+
+.Lany-Group hgroup h4 {
+  font-size: 0.875rem;
+  color: var(--lany-secondary-color);
+  letter-spacing: 1px;
+  margin-bottom: 1em;
+}

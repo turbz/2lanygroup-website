@@ -1,0 +1,126 @@
+.Optime-Testimony {
+  text-align: center;
+  margin: 4em 1em;
+}
+
+.Optime-Testimony > div > hgroup h4 {
+  font-size: 0.875rem;
+  color: var(--lany-secondary-color);
+  margin-bottom: 1em;
+  letter-spacing: 1px;
+}
+
+.Optime-Testimony > div > hgroup h2 {
+  color: var(--lany-primary-color);
+}
+
+.Optime-Testimony .cards {
+  display: flex;
+  justify-content: center;
+  margin: 2em 0;
+}
+
+.Optime-Testimony .cards button {
+  display: none;
+}
+
+.Optime-Testimony .card figure {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto;
+  border: 2px solid var(--lany-secondary-color);
+  border-radius: 50%;
+}
+
+.Optime-Testimony .card p {
+  font-size: 1.6rem;
+  color: var(--lany-quaternary-color);
+  margin: 1.4em 0;
+  line-height: 1.5;
+}
+
+.Optime-Testimony .card h3 {
+  font-family: "Freestyle Script";
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+.Optime-Testimony .card h4 {
+  font-size: 0.875rem;
+  font-weight: normal;
+  color: var(--lany-quaternary-color);
+}
+
+.Optime-Testimony ul {
+  display: flex;
+  justify-content: center;
+}
+
+.Optime-Testimony ul li {
+  display: flex;
+  margin: auto 0.5em;
+}
+
+.Optime-Testimony ul li:first-of-type span:first-of-type {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border: 3px solid var(--lany-secondary-color);
+  margin-right: 0.5em;
+  border-radius: 50%;
+}
+
+.Optime-Testimony ul li:first-of-type span:last-of-type {
+  display: inline-block;
+  width: 15px;
+  height: 2px;
+  margin: auto 0;
+  background-color: var(--lany-secondary-color);
+}
+
+.Optime-Testimony ul li:last-of-type span:first-of-type {
+  width: 10px;
+  height: 10px;
+  border: 2px solid var(--lany-quaternary-color);
+  margin-right: 0.5em;
+  border-radius: 50%;
+}
+
+.Optime-Testimony .cards button {
+  display: none;
+  background-color: transparent;
+  border: none;
+}
+
+.Optime-Testimony .arrow {
+  border: solid var(--lany-quaternary-color);
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 12px;
+}
+
+.Optime-Testimony .right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.Optime-Testimony .left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+@media (min-width: 64em) {
+  .Optime-Testimony .cards {
+    max-width: 920px;
+    margin: 2em auto;
+  }
+
+  .Optime-Testimony .cards button {
+    display: block;
+  }
+
+  .Optime-Testimony .card {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}

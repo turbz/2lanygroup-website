@@ -1,0 +1,251 @@
+.Optime-Feature > div:first-of-type {
+  color: #fff;
+  padding: 4em 2em;
+  background-color: #3f7ea6;
+}
+
+.Optime-Feature > div:first-of-type > div:first-of-type {
+  text-align: center;
+}
+
+.Optime-Feature hgroup h4 {
+  color: var(--lany-secondary-color);
+  font-size: 0.876rem;
+  font-weight: 900;
+}
+
+.Optime-Feature hgroup h2 {
+  color: #fff !important;
+  margin: 0.3em 0;
+}
+
+.Optime-Feature > div:first-of-type p {
+  opacity: 0.5;
+  line-height: 1.5;
+}
+
+.Optime-Feature .cards {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0;
+}
+
+.Optime-Feature .card {
+  display: none;
+  padding: 2em;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+.Optime-Feature .card h3 {
+  margin: 1em 0;
+}
+
+.Optime-Feature .card img {
+  width: 48px;
+  height: 48px;
+}
+
+.Optime-Feature .card:nth-child(1) {
+  display: inline-block;
+}
+
+.Optime-Feature > div:first-of-type > div:last-of-type {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  margin-top: 1.4em;
+  line-height: 1.2;
+}
+
+.Optime-Feature > div:first-of-type > div:last-of-type a {
+  color: var(--lany-secondary-color);
+  margin-left: 0.3em;
+}
+
+.Optime-Feature .quote {
+  position: relative;
+  top: -2em;
+  margin: 1em;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  overflow: auto;
+}
+
+.Optime-Feature form {
+  padding: 2em 1em 1em;
+}
+
+.Optime-Feature form > div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 1.4em;
+}
+
+.Optime-Feature form h4 {
+  width: 100%;
+  color: #3f7ea6;
+  margin-bottom: 1em;
+}
+
+.Optime-Feature form input,
+.Optime-Feature form select {
+  color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  margin-bottom: 1.4em;
+  padding: 1.2em 1em;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.Optime-Feature form input:focus,
+.Optime-Feature form select:focus {
+  border: 1px solid var(--lany-secondary-color);
+}
+
+.Optime-Feature form .shipment-data div:first-of-type,
+.Optime-Feature form .shipment-data div:last-of-type {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Optime-Feature form .shipment-data div:first-of-type input {
+  width: 48%;
+}
+
+.Optime-Feature form .shipment-data div:last-of-type label {
+  color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.Optime-Feature form .shipment-data div:last-of-type label input {
+  width: 18px;
+  height: 18px;
+  margin: auto 0;
+}
+
+.Optime-Feature form .shipment-data div:last-of-type label span {
+  font-size: 0.875rem;
+  margin: auto 0;
+  margin-left: 0.5em;
+}
+
+.Optime-Feature form input[type="submit"] {
+  color: #fff;
+  font-weight: 900;
+  width: 100%;
+  margin-top: 1em;
+  background-color: #3f7ea6;
+  border-radius: 5px;
+}
+
+.Optime-Feature .brochure {
+  display: none;
+}
+
+@media (min-width: 30em) {
+  .Optime-Feature form .shipment-data div:last-of-type label {
+    width: auto;
+  }
+}
+
+@media (min-width: 50em) {
+  .Optime-Feature .card {
+    width: 48%;
+  }
+  .Optime-Feature .card:nth-child(2) {
+    display: inline-block;
+  }
+
+  .Optime-Feature .quote {
+    display: flex;
+  }
+
+  .Optime-Feature form {
+    padding: 2.4em;
+  }
+
+  .Optime-Feature form .shipment-data div:last-of-type label {
+    width: 22.5%;
+  }
+
+  .Optime-Feature .brochure {
+    position: relative;
+    color: #fff;
+    display: block;
+    width: 320px;
+    min-width: 320px;
+    background-color: var(--lany-secondary-color);
+    padding: 2.4em;
+  }
+
+  .Optime-Feature .brochure h2 {
+    font-size: 2rem;
+    margin-bottom: 1em;
+    line-height: 1.25;
+  }
+
+  .Optime-Feature .brochure p {
+    line-height: 1.5;
+  }
+
+  .Optime-Feature .brochure button {
+    position: absolute;
+    bottom: 3.7em;
+    color: #fff;
+    font-weight: 900;
+    min-width: 240px;
+    padding: 1em;
+    border: 1px solid #3f7ea6;
+    background-color: #3f7ea6;
+    border-radius: 5px;
+  }
+}
+
+@media (min-width: 64em) {
+  .Optime-Feature > div:first-of-type {
+    padding: 4em 2em 8em;
+  }
+  .Optime-Feature .card {
+    width: 31.5%;
+  }
+  .Optime-Feature .card:nth-child(3) {
+    display: inline-block;
+  }
+
+  .Optime-Feature .quote {
+    top: -4em;
+    margin: 0 5em;
+  }
+
+  .Optime-Feature form input,
+  .Optime-Feature form select {
+    width: 31.5%;
+  }
+
+  .Optime-Feature form .shipment-data div:first-of-type {
+    width: 66%;
+  }
+
+  .Optime-Feature form .shipment-data div:first-of-type input {
+    width: 22.5%;
+  }
+}
+
+@media (min-width: 80em) {
+  .Optime-Feature .cards {
+    width: 1150px;
+    margin: 0 auto;
+  }
+
+  .Optime-Feature .card {
+    width: 22.5%;
+  }
+  .Optime-Feature .card:nth-child(4) {
+    display: inline-block;
+  }
+}

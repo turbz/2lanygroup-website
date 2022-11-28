@@ -1,0 +1,273 @@
+.Optime-Banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../images/photo-1591768793355-74d04bb6608f.avif");
+  background-position: center;
+  background-size: cover;
+  padding: 8vh;
+}
+
+.Optime-Banner .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.Optime-Banner .cta {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.Optime-Banner .cta button {
+  display: none;
+}
+
+.Optime-Banner .cta div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.Optime-Banner .cta div h2 {
+  color: #fff;
+  font-size: 8vw;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.Optime-Banner .cta div p {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #fff;
+  max-width: 312px;
+  margin: 2vh 0;
+  line-height: 1.25;
+}
+
+.Optime-Banner .cta div ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.Optime-Banner .cta div ul a {
+  display: block;
+  font-size: 0.875rem;
+  padding: 0.8em;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.Optime-Banner .cta div ul li:first-of-type a {
+  margin-right: 1.4em;
+  background-color: var(--lany-secondary-color);
+}
+
+.Optime-Banner .play {
+  display: none;
+}
+
+.Optime-Banner .cta .arrow {
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 12px;
+}
+
+.Optime-Banner .cta .right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.Optime-Banner .cta .left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.Optime-Banner .play ul {
+  display: none;
+}
+
+@media (min-width: 30em) {
+  .Optime-Banner .cta div {
+    max-width: 500px;
+    margin: auto;
+  }
+  .Optime-Banner .cta div h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 50em) {
+  .Optime-Banner .cta button {
+    display: block;
+    background-color: transparent;
+    border: none;
+  }
+
+  .Optime-Banner .cta button svg {
+    fill: #fff;
+    width: 48px;
+    height: 48px;
+    stroke-width: 0;
+  }
+
+  .Optime-Banner .cta div ul a {
+    padding: 16px 44px;
+  }
+
+  .Optime-Banner .play {
+    display: inline-block;
+    margin-top: 2em;
+  }
+
+  .Optime-Banner .play .video {
+    text-align: left;
+    color: #fff;
+    position: relative;
+    display: flex;
+    width: 220px;
+    height: 80px;
+    margin: 0 auto;
+  }
+
+  .Optime-Banner .play .video button {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 50%;
+  }
+
+  .Optime-Banner .play .video button::before {
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    content: "";
+    display: block;
+    width: 95px;
+    height: 95px;
+    margin: auto;
+    border: 1px solid #fff;
+    animation: blinker 1s linear infinite;
+    border-radius: 50%;
+  }
+
+  .Optime-Banner .play .video button > span {
+    display: flex;
+    color: #fff;
+    width: 65px;
+    height: 65px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+
+  .Optime-Banner .play .video button svg {
+    fill: var(--lany-secondary-color);
+    width: 24px;
+    height: 24px;
+    margin: auto;
+  }
+
+  .Optime-Banner .play .video p {
+    font-weight: 600;
+    margin: auto 0;
+    max-width: 100px;
+    line-height: 1.1;
+  }
+}
+
+@media (min-width: 64em) {
+  .Optime-Banner {
+    padding-bottom: 0;
+  }
+
+  .Optime-Banner .cta {
+    text-align: left;
+    margin: 5em 0;
+  }
+  .Optime-Banner .cta div {
+    text-align: left;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 85vw;
+    max-width: none;
+    margin: auto 0;
+  }
+
+  .Optime-Banner .cta div h2 {
+    font-size: 4rem;
+    max-width: 600px;
+  }
+
+  .Optime-Banner .cta div ul {
+    justify-content: flex-start;
+  }
+
+  .Optime-Banner .play {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4em;
+  }
+
+  .Optime-Banner .play .video {
+    margin: auto 0;
+  }
+
+  .Optime-Banner .play ul {
+    position: relative;
+    display: flex;
+    z-index: 1;
+  }
+
+  .Optime-Banner .play ul {
+    display: flex;
+  }
+
+  .Optime-Banner .play ul li a {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 156px;
+    font-weight: 600;
+    margin-right: 0.2em;
+    padding: 1.5em 2em;
+    background-color: #3f7ea6;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .Optime-Banner .play ul li:nth-child(3) a {
+    height: 166px;
+    margin-top: -10px;
+    background-color: var(--lany-secondary-color);
+  }
+
+  .Optime-Banner .play ul li a img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .Optime-Banner .play ul li a span {
+    width: 110px;
+    margin-top: 0.8em;
+  }
+}
+
+@keyframes blinker {
+  75% {
+    opacity: 0;
+  }
+}

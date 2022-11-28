@@ -1,0 +1,190 @@
+.Optime-Header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 90px;
+  padding: 1em 1.4em;
+  background-color: #fff;
+}
+
+.Optime-Header h1 {
+  margin: auto 0;
+}
+
+.Optime-Header h1 span {
+  display: block;
+  width: 100px;
+  height: 32px;
+  background-image: url("../../images/2Lany_Group.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.Optime-Header > nav {
+  margin: auto 0;
+}
+
+.Optime-Header > nav > div {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  width: 100vw;
+  background-color: #fff;
+  animation: slideUp 1s;
+  z-index: 2;
+}
+
+.Optime-Header > nav > div ul li {
+  display: flex;
+  position: relative;
+  height: 42px;
+}
+
+.Optime-Header > nav > div ul a {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 0.8em 1.4em;
+  overflow: hidden;
+}
+
+.Optime-Header > nav > div ul button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 100vw;
+  height: 100%;
+  padding: 0 1.4em;
+  background-color: transparent;
+  border: none;
+}
+
+.Optime-Header > nav > div ul button svg {
+  fill: black;
+  width: 18px;
+  height: 18px;
+  margin: auto 0;
+}
+
+.Optime-Header > nav > div div {
+  margin: 0.8em;
+}
+
+.Optime-Header > nav > div div button {
+  display: none;
+  height: 38px;
+  padding: 0 1em;
+  background-color: var(--lany-secondary-color);
+  border: none;
+  border-radius: 5px;
+}
+
+.Optime-Header > nav > div div button span {
+  margin: auto 0;
+}
+
+.Optime-Header > nav > div div button svg {
+  margin: auto 0;
+}
+
+.Optime-Header nav > button {
+  display: flex;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.Optime-Header nav > button svg {
+  width: 42px;
+  height: 42px;
+  margin: auto;
+}
+
+@media (min-width: 64em) {
+  .Optime-Header {
+    position: absolute;
+    background-color: transparent;
+    z-index: 2;
+    padding: 0 5em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .Optime-Header h1 span {
+    display: block;
+    width: 180px;
+    height: 48px;
+  }
+
+  .Optime-Header > nav {
+    height: 90px;
+  }
+
+  .Optime-Header > nav > button {
+    display: none;
+  }
+
+  .Optime-Header > nav > div {
+    position: relative;
+    top: 0;
+    width: auto;
+    display: flex !important;
+    background-color: transparent;
+  }
+
+  .Optime-Header > nav > div ul {
+    display: flex;
+  }
+
+  .Optime-Header > nav > div ul li {
+    display: flex;
+    justify-content: center;
+    height: 90px;
+  }
+  .Optime-Header > nav > div ul a {
+    color: #fff;
+    height: auto;
+    margin: auto 0;
+    padding: 0 1.4em;
+  }
+
+  .Optime-Header > nav > div ul li:hover {
+    border-bottom: 2px solid #fff;
+    transition: ease-in 1s;
+  }
+
+  .Optime-Header > nav > div ul button {
+    display: none;
+  }
+
+  .Optime-Header > nav > div div {
+    margin: auto 0;
+  }
+
+  .Optime-Header > nav > div div button {
+    display: flex;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    margin-top: 5%;
+  }
+
+  25% {
+    margin-top: 0%;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    border-width: 0;
+  }
+
+  25% {
+    margin-top: 2px;
+  }
+}
