@@ -7,13 +7,15 @@ import Services from "../components/services/services"
 import Testimony from "../components/Testimony/testimony"
 import Feature from "../components/feature/feature"
 import Location from "../components/location/location"
+import AboutCompany from "../components/about-company/about-company"
 
 const IndexPage = () => (
   <Layout>
     <Banner />
     <Services />
     <Feature />
-    <Testimony />
+    {/* <Testimony /> */}
+    <AboutCompany />
     <Location />
   </Layout>
 )

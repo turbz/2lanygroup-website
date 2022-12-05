@@ -1,28 +1,30 @@
 import React from "react"
 import "./banner.css"
 import { IoIosPlay } from "react-icons/io"
+import {
+  FaTruck,
+  FaTruckLoading,
+  FaTruckMoving,
+  FaTruckPickup,
+} from "react-icons/fa"
 
 export default function Banner() {
   const service_links = [
     {
-      title: "Warehousing Services",
-      src_link:
-        "https://www.lanygroup.taevo.co.za/wp-content/uploads/2022/10/Forklift-Icon-48x48-1.png",
+      title: "Short Trucks",
+      src_link: <FaTruck />,
     },
     {
-      title: "Air Freight Services",
-      src_link:
-        "https://www.lanygroup.taevo.co.za/wp-content/uploads/2022/10/Airplane-Icon-48x48-1.png",
+      title: "Main Truck",
+      src_link: <FaTruckMoving />,
     },
     {
-      title: "Ociean Freight Services",
-      src_link:
-        "https://www.lanygroup.taevo.co.za/wp-content/uploads/2022/10/Ship-Icon-48x48-1.png",
+      title: "Trailers",
+      src_link: <FaTruckLoading />,
     },
     {
-      title: "Road Freight Services",
-      src_link:
-        "https://www.lanygroup.taevo.co.za/wp-content/uploads/2022/10/Truck-Icon-48x48-1.png",
+      title: "Van Delivery",
+      src_link: <FaTruckPickup />,
     },
   ]
   return (
@@ -35,13 +37,13 @@ export default function Banner() {
         <div>
           <h2>Fast, Certified & Flexible Solutions</h2>
           <p>
-            Through integrated supply chain solutions, our drives sustainable
-            competitive advantages to some of the largest companies all over the
-            world.
+            Safe and on time delivery of your goods is our primary concern. with
+            top notch staff highly modernised vehicles we are confident we can
+            do it.
           </p>
           <ul>
             <li>
-              <a href="#services">Our Services</a>
+              <a href="#services">Our Resources</a>
             </li>
             <li>
               <a href="#services">About Us</a>
@@ -57,7 +59,7 @@ export default function Banner() {
           {service_links.map((d, i) => (
             <li key={i}>
               <a href="#home">
-                <img src={`${d.src_link}`} alt={`${d.title}`} />
+                {d.src_link}
                 <span>{d.title}</span>
               </a>
             </li>

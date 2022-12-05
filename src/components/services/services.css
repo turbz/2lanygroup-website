@@ -39,6 +39,12 @@
   border-radius: 5px;
 }
 
+.Optime-Services .card > svg {
+  fill: var(--lany-secondary-color);
+  width: 70px;
+  height: 70px;
+}
+
 .Optime-Services .card h3 {
   color: var(--lany-primary-color);
   font-weight: 900;
@@ -52,7 +58,15 @@
 }
 
 .Optime-Services .card a {
+  display: flex;
+  justify-content: center;
   color: var(--lany-primary-color);
+}
+
+.Optime-Services .card a svg {
+  width: 16px;
+  height: 16px;
+  margin: auto 0.5em;
 }
 
 .Optime-Services .find {

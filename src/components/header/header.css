@@ -50,6 +50,10 @@
   overflow: hidden;
 }
 
+.Active-Header > nav > div ul a {
+  color: black !important;
+}
+
 .Optime-Header > nav > div ul button {
   position: absolute;
   top: 0;
@@ -74,7 +78,7 @@
   margin: 0.8em;
 }
 
-.Optime-Header > nav > div div button {
+.Optime-Header > nav > div div a {
   display: none;
   height: 38px;
   padding: 0 1em;
@@ -83,11 +87,11 @@
   border-radius: 5px;
 }
 
-.Optime-Header > nav > div div button span {
+.Optime-Header > nav > div div a span {
   margin: auto 0;
 }
 
-.Optime-Header > nav > div div button svg {
+.Optime-Header > nav > div div a svg {
   margin: auto 0;
 }
 
@@ -102,6 +106,11 @@
   width: 42px;
   height: 42px;
   margin: auto;
+}
+
+.Active-Header {
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 64em) {
@@ -164,7 +173,7 @@
     margin: auto 0;
   }
 
-  .Optime-Header > nav > div div button {
+  .Optime-Header > nav > div div a {
     display: flex;
   }
 }

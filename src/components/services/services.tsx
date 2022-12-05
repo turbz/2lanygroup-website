@@ -1,6 +1,7 @@
 import React from "react"
 import "./services.css"
 import { IoIosArrowRoundForward } from "react-icons/io"
+import { FaPallet, FaShieldAlt, FaShippingFast } from "react-icons/fa"
 
 export default function Services() {
   const service_links = [
@@ -12,49 +13,45 @@ export default function Services() {
     //   url_link: "",
     // },
     {
-      title: "Air Freight Services",
-      src_link:
-        "https://www.lanygroup.taevo.co.za/wp-content/uploads/2022/10/Airplane-Icon-1.png",
+      title: "Your cargo our concern",
+      src_link: <FaPallet />,
       description:
-        "We can arrange and provides with the comprehensive service in the sphere of urgent, valuable, fragile or any cargoes conscientious accelerated delivery by air.",
+        "We offer a diverse range of transportation services from project cargo to domestic retail distribution and delivery.",
       url_link: "",
     },
     {
-      title: "Ocean Freight Services",
-      src_link:
-        "https://www.lanygroup.taevo.co.za/wp-content/uploads/2022/10/Ship-Icon-1.png",
+      title: "100% Safe Delivery",
+      src_link: <FaShieldAlt />,
       description:
-        "We provides with the main types of basic conditions International sea transportation is implemented by our partners’ vessels, the largest ocean carriers.",
+        "Our capacities give us the freedom of executing project of various sizes. From small personal projects to building mega build of grand scale.",
       url_link: "",
     },
     {
-      title: "Road Freight Services",
-      src_link:
-        "https://www.lanygroup.taevo.co.za/wp-content/uploads/2022/10/Truck-Icon-1.png",
+      title: "Modern Vehicle Fleet",
+      src_link: <FaShippingFast />,
       description:
-        "We provides a wide range of transportation services including quality international road transportation of cargoes & goods arriving from the ports all over the world.",
+        "Our modern equipped vehicles are operating in countries worldwide under our own banner or our clients’ livery. Our fleet counts over 30 vehicles.",
       url_link: "",
     },
   ]
 
   return (
-    <section className="Optime-Services">
+    <section id="services" className="Optime-Services">
       <div>
         <hgroup>
           <h4>Real Solutions, Real Fast!</h4>
-          <h2>Delivering the Best Global Logistics Solutions.</h2>
+          <h2>Delivering the Best Local Transport Solutions.</h2>
         </hgroup>
         <p>
-          Our global logistics expertise, advanced supply chain technology &
-          customized logistics solutions will help you analyze, develop and
-          implement successful supply chain management strategies from
-          end-to-end.
+          Our local transport expertise & customized transport solutions ensures
+          you the best quality services, safe and on time delivery of your goods
+          and very careful handling of valualable goods.
         </p>
       </div>
       <div className="cards">
         {service_links.map((d, i) => (
           <div className="card" key={i}>
-            <img src={`${d.src_link}`} alt={`${d.title}`} />
+            {d.src_link}
             <h3>{d.title}</h3>
             <p>{d.description}</p>
             <a>

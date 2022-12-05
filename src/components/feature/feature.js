@@ -37,7 +37,7 @@ export default function Feature() {
     },
   ]
   return (
-    <section className="Optime-Feature">
+    <section id="features" className="Optime-Feature">
       <div className="features">
         <div>
           <hgroup>
@@ -61,11 +61,11 @@ export default function Feature() {
 
         <div className="find">
           Working every day to earn our customers’ trust.
-          <a href="#home">Get Started!</a>
+          <a href="#contact">Contact Us!</a>
         </div>
       </div>
       <div className="quote">
-        <form className="form">
+        <form id="contact" className="form">
           <div className="personal-data">
             <h4>Personal Data</h4>
             <input type="text" placeholder="Name*" />

@@ -20,7 +20,8 @@
   --lany-quaternary-color: #687b8c;
   --lany-quinary-color: #f2f0eb;
 
-  /* Heaing */
+  /* Global */
+  --max-width: 1180px;
 }
 
 .Lany-Group {
@@ -38,4 +39,8 @@
   color: var(--lany-secondary-color);
   letter-spacing: 1px;
   margin-bottom: 1em;
+}
+
+main {
+  padding-top: 120px;
 }

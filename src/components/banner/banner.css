@@ -48,7 +48,7 @@
   font-size: 0.875rem;
   font-weight: 500;
   color: #fff;
-  max-width: 312px;
+  max-width: 360px;
   margin: 2vh 0;
   line-height: 1.25;
 }
@@ -109,6 +109,10 @@
 }
 
 @media (min-width: 50em) {
+  .Optime-Banner {
+    overflow: hidden;
+  }
+
   .Optime-Banner .cta button {
     display: block;
     background-color: transparent;
@@ -249,13 +253,15 @@
     border-radius: 5px 5px 0 0;
   }
 
-  .Optime-Banner .play ul li:nth-child(3) a {
+  .Optime-Banner .play ul li:hover a {
     height: 166px;
     margin-top: -10px;
     background-color: var(--lany-secondary-color);
+    animation: slideInUp; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 0.5s; /* don't forget to set a duration! */
   }
 
-  .Optime-Banner .play ul li a img {
+  .Optime-Banner .play ul li a svg {
     width: 48px;
     height: 48px;
   }

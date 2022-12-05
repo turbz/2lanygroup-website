@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import React from "react"
 import "./footer.css"
 
@@ -20,7 +21,8 @@ export default function Footer() {
               <span>Email</span>: <a href="#email">info@2lanygroup.co.za</a>
             </li>
             <li>
-              <span>Phone</span>: <a href="#phone]">+270116005000</a>
+              <span>Phone</span>:{" "}
+              <a href="#phone]">+27 83 868 1248 / +27 68 091 6112</a>
             </li>
           </ul>
         </div>
@@ -29,22 +31,16 @@ export default function Footer() {
           <span></span>
           <ul>
             <li>
-              <a href="#services">About Us</a>
+              <Link to="/about-us">About Us</Link>
             </li>
             <li>
-              <a href="#features">Meet Our Team</a>
+              <a href="/#services">Services</a>
             </li>
             <li>
-              <a href="#features">New & Media</a>
+              <a href="/#features">Features</a>
             </li>
             <li>
-              <a href="#features">Case Studies</a>
-            </li>
-            <li>
-              <a href="#features">Contacts</a>
-            </li>
-            <li>
-              <a href="#features">Careers</a>
+              <a href="#contacts">Contacts</a>
             </li>
           </ul>
         </div>
@@ -53,20 +49,20 @@ export default function Footer() {
           <span></span>
           <ul>
             <li>
-              <a href="#features">Warehousing</a>
+              <a href="#features">Short Trucks</a>
             </li>
             <li>
-              <a href="#contact">Air Freight</a>
+              <a href="#contact">Main Trucks</a>
             </li>
             <li>
-              <a href="#contact">Ocean Freight</a>
+              <a href="#contact">Trailers</a>
             </li>
             <li>
-              <a href="#contact">Road Freight</a>
+              <a href="#contact">Van Delivery</a>
             </li>
-            <li>
+            {/* <li>
               <a href="#contact">Supply Chain</a>
-            </li>
+            </li> */}
             <li>
               <a href="#contact">Packaging</a>
             </li>
@@ -85,9 +81,9 @@ export default function Footer() {
             <li>
               <a href="#services">Industrial & Chemical</a>
             </li>
-            <li>
+            {/* <li>
               <a href="#services">Power Generation</a>
-            </li>
+            </li> */}
             <li>
               <a href="#services">Food & Beverage</a>
             </li>
@@ -106,12 +102,12 @@ export default function Footer() {
             <li>
               <a href="#features">Track & Trace</a>
             </li>
-            <li>
+            {/* <li>
               <a href="#features">Find A Location</a>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <a href="#features">Global Agents</a>
-            </li>
+            </li> */}
             <li>
               <a href="#features">Help & FAQs</a>
             </li>
